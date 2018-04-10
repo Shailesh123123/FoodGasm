@@ -1,0 +1,22 @@
+{
+  "name": "foodhelp",
+  "version": "1.0.0",
+  "description": "Mean Stack application ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Shailesh Hegde",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "bcrypt-node": "^0.1.0",
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^3.5.1",
+    "config": "^1.30.0",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^5.0.13",
+    "request-promise": "^4.2.2"
+  }
+}

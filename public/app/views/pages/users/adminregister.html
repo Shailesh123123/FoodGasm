@@ -1,0 +1,71 @@
+<html>
+
+<head>
+
+<style>
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<h1>Register yourself as an admin</h1>
+<div class="page-header">Admin Registration</div>
+
+<form ng-controller="adminregCtrl" ng-submit="adminregister.adminregistrationUser(adminregData)">
+
+<label>Username</label>
+<input class="form-control" type = "text" name="username" placeholder="Please enter the username" ng-model="adminregister.adminregData.username">
+<br>
+<br>
+
+<label>Password</label>
+<input class="form-control" type = "password" name="password" placeholder="Please enter the password" ng-model="adminregister.adminregData.password">
+<br>
+<br>
+
+<label>Email</label>
+<input class="form-control" type = "text" name="email" placeholder="Please enter your email" ng-model="adminregister.adminregData.email">
+<br>
+<br>
+
+<button class="btn btn-primary" type="submit">Register</button>
+</form>
+
+<div class="jumbotron text-center" ng-show="adminregister.loading">
+  <span class="glyphicon glyphicon-repeat spinner"></span>
+  <p>Loading....</p>
+</div>
+
+
+<div class="row show-hide-message" ng-show="adminregister.successMsg">
+  <div class="alert alert-success">{{adminregister.successMsg}}</div>
+</div>
+<br>
+
+<div class="row show-hide-message" ng-show="adminregister.errorMsg">
+  <div class="alert alert-danger">{{adminregister.errorMsg}}</div>
+</div>
+<br>
+
+
+</body>
+<footer>
+  <div class="footer">
+    <p>For further details about us you can contact us on </p><a href="mailto:hegdeshailesh90@gmail.com">Shailesh Hegde</a>
+  </div>
+</footer>
+
+</html>

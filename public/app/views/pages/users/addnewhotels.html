@@ -1,0 +1,34 @@
+<html>
+<body>
+
+<h1 text-align:center>ADD NEW RESTURAUNTS</h1>
+
+<div class="page-header">Add new hotels</div>
+
+<form ng-controller="adminmainhotelsCntrl" ng-submit="adminmainhotels.AddHotels(hotelData)">
+
+<label>Hotel Name</label>
+<input class="form-control" type = "text" name="Name" placeholder="Please enter the hotel name" ng-model="adminmainhotels.hotelData.Name">
+<br>
+<br>
+
+<label>Location</label>
+<input class="form-control" type = "text" name="City" placeholder="Please enter the location" ng-model="adminmainhotels.hotelData.City">
+<br>
+<br>
+
+<label>Cuisine</label>
+<input class="form-control" type = "text" name="Cuisine" placeholder="Please enter the cuisine" ng-model="adminmainhotels.hotelData.Cuisine">
+<br>
+<br>
+
+<label>Ratings</label>
+<input class="form-control" type = "text" name="Ratings" placeholder="Please enter the ratings you would give this hotel" ng-model="adminmainhotels.hotelData.Ratings">
+<br>
+<br>
+
+<button class="btn btn-primary" type="submit">Add</button>
+</form>
+
+</body>
+</html>

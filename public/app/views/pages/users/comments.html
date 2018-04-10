@@ -1,0 +1,57 @@
+<html>
+<head>
+
+<style>
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+h5 {
+
+
+color:green;
+
+}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+  <h5><i><font color="green">Add Comments</font></i></h5>
+  <form ng-controller="commentsPageCntrl" ng-submit="comments.CommentsUser(commentData)">
+
+  <label>Username</label>
+  <input class="form-control" type = "text" name="username" placeholder="Please enter the username" ng-model="comments.commentData.username">
+  <br>
+  <br>
+
+  <label>comments</label>
+  <input class="form-control" type = "text" name="comments" placeholder="Please enter the comments" ng-model="comments.commentData.comments">
+  <br>
+  <br>
+
+  <label>Name of the resturaunt</label>
+  <input class="form-control" type = "text" name="Name" placeholder="Please enter the name of the resturaunt" ng-model="comments.commentData.Name">
+  <br>
+  <br>
+
+  <button class="btn btn-primary" type="submit">Enter</button>
+  </form>
+
+
+  <br>
+</body>
+
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+
+
+<h1><i><font color="green">Contains Hotel information!</font></i></h1>
+<br>
+<br>
+
+<html ng-app="listPageController" ng-controller="listPageCntrl" >
+
+
+<head>
+
+<style>
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+
+
+</style>
+
+</head>
+
+
+
+<body ng-controller="listPageCntrl">
+  <div ng-init="getData()">
+    <table class="table table-hover">
+      <tr class="table-heading">
+        <th>Name</th>
+        <th>City</th>
+      <th>Cuisine</th>
+        <th>Ratings</th>
+      </tr>
+    <tr>
+    <!--  <div ng-repeat="hotel in hotels">
+        <th>{{hotel.Name}}</th>
+        <th>{{hotel.City}}</th>
+      <th>{{hotel.Cuisine}}</th>
+        <th>{{hotel.Ratings}}</th><button class="btn btn-primary" ng-click="init2();">Comment</button></td>
+</div>-->
+      <td>Godavari</td>
+      <td>Boston</td>
+      <td>Indian</td>
+      <td>4</td>
+    <td>  <button class="btn btn-primary" ng-click="init2();">Comment</button></td>
+</tr>
+<tr>
+  <td>Punjab Palace</td>
+  <td>Boston</td>
+  <td>Indian</td>
+  <td>5</td>
+<td>  <button class="btn btn-primary" ng-click="init2();">Comment</button></td>
+</tr>
+    </table>
+  </div>
+
+
+
+</body>
+</html>

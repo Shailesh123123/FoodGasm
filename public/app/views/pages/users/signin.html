@@ -1,0 +1,66 @@
+<html>
+
+<head>
+
+<style>
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>SIGN IN</h1>
+<div class="page-header">SIGN IN AS A NEW USER HERE</div>
+
+  <form ng-submit="main.doLogin(loginData)">
+
+    <label>Username</label>
+    <input class="form-control" type = "text" name="username" placeholder="Please enter the username" ng-model="main.loginData.username">
+    <br>
+    <br>
+
+    <label>Password</label>
+    <input class="form-control" type = "password" name="password" placeholder="Please enter the password" ng-model="main.loginData.password">
+    <br>
+    <br>
+
+<button class="btn btn-primary" type="submit">Sign In</button>
+<!--<button type="button" class="btn btn-warning" ng-click="main.twitter();">Twitter</button>-->
+
+  </form>
+
+  <div class="jumbotron text-center" ng-show="main.loading">
+    <span class="glyphicon glyphicon-repeat spinner"></span>
+    <p>Loading....</p>
+  </div>
+
+
+  <div class="row show-hide-message" ng-show="main.successMsg">
+    <div class="alert alert-success">{{main.successMsg}}</div>
+  </div>
+  <br>
+
+  <div class="row show-hide-message" ng-show="main.errorMsg">
+    <div class="alert alert-danger">{{main.errorMsg}}</div>
+  </div>
+  <br>
+
+
+
+</body>
+<footer>
+  <div class="footer">
+    <p>For further details about us you can contact us on </p><a href="mailto:hegdeshailesh90@gmail.com">Shailesh Hegde</a>
+  </div>
+</footer>
+</html>

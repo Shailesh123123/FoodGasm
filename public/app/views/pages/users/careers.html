@@ -1,0 +1,35 @@
+<html>
+<body>
+
+
+<h1 text-align:center>JOB CART</h1>
+
+<div class="page-header">Job Information to be added by admin</div>
+
+<form ng-controller="careersCntrl" ng-submit="careers.JobsAdd(careerData)">
+
+<label>Job Description</label>
+<input class="form-control" type = "text" name="Job_Description" placeholder="Please enter the Job Description" ng-model="careers.careerData.Job_Description">
+<br>
+<br>
+
+<label>Added by:</label>
+<input class="form-control" type = "text" name="Added_by" placeholder="Please enter the person's name who added the job" ng-model="careers.careerData.Added_by">
+<br>
+<br>
+
+<label>Team</label>
+<input class="form-control" type = "text" name="Team" placeholder="Please enter the team this job belongs to" ng-model="careers.careerData.Team">
+<br>
+<br>
+
+<label>Requisites</label>
+<input class="form-control" type = "text" name="Requisites" placeholder="Please enter the requisites needed" ng-model="careers.careerData.Requisites">
+<br>
+<br>
+
+<button class="btn btn-primary" type="submit">Add</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<html ng-app='mainController'>
+
+<head>
+
+<style>
+
+
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+h1 {
+  color: green;
+}
+
+</style>
+
+</head>
+
+<body ng-controller="mainPageCntrl">
+<h1 text-align:center><i><font color="green">PLEASE ENTER THE DETAILS</font></i></h1>
+<br>
+<br>
+<head>
+    <title>AngularJS $Http service tutorial example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+</head>
+<form>
+
+  <label>City</label>
+  <input class="form-control" type = "text" name="City" placeholder="Enter the name of the city" >
+  <br>
+  <br>
+
+  <label>Cuisine</label>
+  <input class="form-control" type = "text" name="Cuisine" placeholder="Please enter your choice of cuisine" >
+  <br>
+  <br>
+
+  <button class="btn btn-primary" ng-click="getUserOne();">Search</button>
+  </form>
+
+
+</form>
+
+
+<!--<footer>
+  <div class="footer">
+    <p>For further details about us you can contact us on </p><a href="mailto:hegdeshailesh90@gmail.com">Shailesh Hegde</a>
+  </div>
+</footer>-->
+</body>
+</html>

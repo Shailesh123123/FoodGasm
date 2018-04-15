@@ -12,7 +12,7 @@ The front end of the application is coded using angular-js, while the back-end h
 
 FoodGasm is a full-stack JavaScript open-source solution, which provides a solid starting point for MongoDB, Node.js, Express, and AngularJS based applications. The idea is to solve the common issues with connecting those frameworks, build a robust framework to support daily development needs, and help developers use better practices while working with popular JavaScript components.
 
-*#Before You Begin*
+Before You Begin*
 
 Before you begin we recommend you read about the basic building blocks that assemble a MEAN.JS application:
 
@@ -22,7 +22,7 @@ AngularJS - Angular's Official Website is a great starting point. You can also u
 Node.js - Start by going through Node.js Official Website and this StackOverflow Thread, which should get you going with the Node.js platform in no time.
 Prerequisites
 
-#Make sure you have installed all of the following prerequisites on your development machine:
+Make sure you have installed all of the following prerequisites on your development machine:
 
 Git - Download & Install Git. OSX and Linux machines typically have this already installed.
 Node.js - Download & Install Node.js and the npm package manager. If you encounter any problems, you can also use this GitHub Gist to install Node.js.
@@ -31,7 +31,7 @@ Bower - You're going to use the Bower Package Manager to manage your front-end p
 $ npm install -g bower
 Downloading MEAN.JS
 
-#Cloning The GitHub Repository
+Cloning The GitHub Repository
 
 The recommended way to get FoodGasm is to use git to directly clone the FoodGasm repository:
 
@@ -58,22 +58,11 @@ Running Your Application
 #Run your application using npm:
 
 $ npm start
-Your application should run on port 3000 with the development environment configuration, so in your browser just go to http://localhost:3000
+Your application should run on port 8080 with the development environment configuration, so in your browser just go to http://localhost:8080
 
 That's it! Your application should be running. To proceed with your development, check the other sections in this documentation. If you encounter any problems, try the Troubleshooting section.
 
 Explore config/env/development.js for development environment configuration options.
-
-Running in Production mode
-
-To run your application with production environment configuration:
-
-$ npm run start:prod
-Explore config/env/production.js for production environment configuration options.
-
-Running with User Seed
-
-To have default account(s) seeded at runtime:
 
 In Development:
 

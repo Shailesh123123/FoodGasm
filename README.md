@@ -74,6 +74,4 @@ Credits
 
 This project belongs to Shailesh Hegde.
 
-License
 
-The MIT License
